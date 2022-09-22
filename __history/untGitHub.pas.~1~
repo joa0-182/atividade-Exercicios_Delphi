@@ -1,0 +1,33 @@
+unit untGitHub;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  TfrmGitHub = class(TForm)
+    Label1: TLabel;
+    LinkLabel1: TLinkLabel;
+    LinkLabel2: TLinkLabel;
+    procedure LinkLabel1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmGitHub: TfrmGitHub;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmGitHub.LinkLabel1Click(Sender: TObject);
+begin
+      LinkLabel1.Caption := '<a href="">DevMedia</a>';
+end;
+
+end.

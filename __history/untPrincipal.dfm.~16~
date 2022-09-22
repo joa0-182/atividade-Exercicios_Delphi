@@ -1,0 +1,134 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Lista de Exerc'#237'cios Delphi'
+  ClientHeight = 575
+  ClientWidth = 661
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 168
+    Top = 56
+    Width = 342
+    Height = 32
+    Caption = 'Lista de Exerc'#237'cios Delphi'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 240
+    Top = 440
+    Width = 176
+    Height = 32
+    Caption = 'Bem vindo(a)'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblNome: TLabel
+    Left = 280
+    Top = 478
+    Width = 93
+    Height = 32
+    Alignment = taCenter
+    Caption = '(nome)'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object btnMedia: TBitBtn
+    Left = 144
+    Top = 128
+    Width = 160
+    Height = 60
+    Caption = 'M'#233'dia'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    OnClick = btnMediaClick
+  end
+  object btnAritmetica: TBitBtn
+    Left = 368
+    Top = 128
+    Width = 160
+    Height = 60
+    Caption = 'Aritm'#233'tica'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnClick = btnAritmeticaClick
+  end
+  object btnMesAno: TBitBtn
+    Left = 144
+    Top = 216
+    Width = 160
+    Height = 60
+    Caption = 'M'#234's e Ano'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    OnClick = btnMesAnoClick
+  end
+  object btnFibonnaci: TBitBtn
+    Left = 368
+    Top = 216
+    Width = 160
+    Height = 60
+    Caption = 'Fibonacci'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+    OnClick = btnFibonnaciClick
+  end
+  object btnMenorMaior: TBitBtn
+    Left = 248
+    Top = 296
+    Width = 160
+    Height = 60
+    Caption = 'Menor e Maior'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+    OnClick = btnMenorMaiorClick
+  end
+end

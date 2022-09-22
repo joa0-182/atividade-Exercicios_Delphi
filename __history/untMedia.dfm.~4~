@@ -1,0 +1,89 @@
+object frmMedia: TfrmMedia
+  Left = 0
+  Top = 0
+  Caption = 'frmMedia'
+  ClientHeight = 536
+  ClientWidth = 707
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 59
+    Top = 40
+    Width = 589
+    Height = 25
+    Caption = 'Tr'#234's Valores Num'#233'ricos Para Exibir a M'#233'dia dos Valores.'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 304
+    Top = 319
+    Width = 78
+    Height = 19
+    Caption = 'Resultado'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 296
+    Top = 344
+    Width = 97
+    Height = 21
+    TabOrder = 0
+  end
+  object Memo1: TMemo
+    Left = 256
+    Top = 192
+    Width = 179
+    Height = 89
+    Lines.Strings = (
+      '')
+    TabOrder = 1
+  end
+  object BitBtn1: TBitBtn
+    Left = 256
+    Top = 96
+    Width = 179
+    Height = 49
+    Caption = 'Calcular M'#233'dia'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+  end
+  object BitBtn2: TBitBtn
+    Left = 368
+    Top = 412
+    Width = 91
+    Height = 33
+    Caption = 'Sair'
+    TabOrder = 3
+  end
+  object BitBtn3: TBitBtn
+    Left = 232
+    Top = 412
+    Width = 89
+    Height = 33
+    Caption = 'Limpar'
+    TabOrder = 4
+  end
+end

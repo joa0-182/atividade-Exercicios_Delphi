@@ -1,0 +1,52 @@
+unit frmMenorMaior;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TfrmMaiorMenor = class(TForm)
+    Label1: TLabel;
+    btnValores: TBitBtn;
+    edtMenor: TEdit;
+    edtMaior: TEdit;
+    edtMedia: TEdit;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    memValores: TMemo;
+    procedure btnValoresClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmMaiorMenor: TfrmMaiorMenor;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmMaiorMenor.btnValoresClick(Sender: TObject);
+var i: integer;
+    num: string;
+    media, soma, maior, menor, proximoNum: real;
+begin
+
+
+      maior := 0;
+      menor := 100000;
+      for i := 1 to 10 do
+        begin
+
+        end;
+
+
+
+end;
+
+end.

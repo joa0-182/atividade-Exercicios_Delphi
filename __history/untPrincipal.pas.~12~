@@ -1,0 +1,72 @@
+unit untPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TfrmPrincipal = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    lblNome: TLabel;
+    btnMedia: TBitBtn;
+    btnAritmetica: TBitBtn;
+    btnMesAno: TBitBtn;
+    btnFibonnaci: TBitBtn;
+    btnMenorMaior: TBitBtn;
+    procedure btnMediaClick(Sender: TObject);
+    procedure btnAritmeticaClick(Sender: TObject);
+    procedure btnMesAnoClick(Sender: TObject);
+    procedure btnFibonnaciClick(Sender: TObject);
+    procedure btnMenorMaiorClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+uses untMedia, untAritmetica, untMesAno, untFibonacci, frmMenorMaior;
+
+procedure TfrmPrincipal.btnAritmeticaClick(Sender: TObject);
+begin
+      frmAritmetica.ShowModal;
+end;
+
+procedure TfrmPrincipal.btnFibonnaciClick(Sender: TObject);
+begin
+      frmFibonacci.ShowModal;
+end;
+
+procedure TfrmPrincipal.btnMediaClick(Sender: TObject);
+begin
+      frmMedia.ShowModal;
+end;
+
+procedure TfrmPrincipal.btnMenorMaiorClick(Sender: TObject);
+begin
+      frmMaiorMenor.ShowModal;
+end;
+
+procedure TfrmPrincipal.btnMesAnoClick(Sender: TObject);
+begin
+      frmMesAno.ShowModal;
+end;
+
+procedure TfrmPrincipal.FormShow(Sender: TObject);
+var nomeUsuario: String;
+begin
+       InputQuery('Atenção','Digite Seu Nome',nomeUsuario);
+       lblNome.Caption := nomeUsuario;
+end;
+
+end.

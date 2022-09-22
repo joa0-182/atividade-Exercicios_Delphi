@@ -1,0 +1,16 @@
+program Exercicios_Delphi;
+
+uses
+  Vcl.Forms,
+  untPrincipal in 'untPrincipal.pas' {frmPrincipal},
+  untMedia in 'untMedia.pas' {frmMedia};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TfrmMedia, frmMedia);
+  Application.Run;
+end.

@@ -1,0 +1,18 @@
+program Exercicios_Delphi;
+
+uses
+  Vcl.Forms,
+  untPrincipal in 'untPrincipal.pas' {frmPrincipal},
+  untMedia in 'untMedia.pas' {frmMedia},
+  untAritmetica in 'untAritmetica.pas' {frmAritmetica};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TfrmMedia, frmMedia);
+  Application.CreateForm(TfrmAritmetica, frmAritmetica);
+  Application.Run;
+end.

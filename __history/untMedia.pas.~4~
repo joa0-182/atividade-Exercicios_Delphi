@@ -1,0 +1,31 @@
+unit untMedia;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TfrmMedia = class(TForm)
+    Label1: TLabel;
+    edtResultado: TEdit;
+    Label2: TLabel;
+    Memo1: TMemo;
+    btnCalcular: TBitBtn;
+    btnSair: TBitBtn;
+    btnLimpar: TBitBtn;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmMedia: TfrmMedia;
+
+implementation
+
+{$R *.dfm}
+
+end.
